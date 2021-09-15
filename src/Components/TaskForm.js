@@ -4,15 +4,20 @@ function TaskForm() {
         <div className="panel panel-warning">
             <div className="panel-heading">
                 <h3 className="panel-title">Thêm Công Việc</h3>
+               
             </div>
             <div className="panel-body">
                 <form>
                     <div className="form-group">
                         <label>Tên :</label>
-                        <input type="text" className="form-control" />
+                        <input type="text" 
+                        className="form-control"
+                        name = "name" />
                     </div>
                     <label>Trạng Thái :</label>
-                    <select className="form-control" required="required">
+                    <select className="form-control"
+                            required="required"
+                            name = "status">
                         <option value="1">Kích Hoạt</option>
                         <option value="0">Ẩn</option>
                     </select>
